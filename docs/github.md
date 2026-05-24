@@ -1,89 +1,203 @@
-# GitHub y Control de Versiones
+# ◇ GitHub & Version Control
 
-## Organización del Proyecto
-
-Olé Sevilla utiliza una estructura monorepo con separación entre frontend y backend.
-
-Esto permite mantener una arquitectura organizada y escalable.
+> ✦ Collaborative development powered by modern version control systems.
 
 ---
 
-# 🏛️ Estructura General
+## ◉ Visión General
 
-```txt
-ole-sevilla/
- ├── frontend/
- ├── backend/
- └── docs/
+Olé Sevilla utiliza Git y GitHub como sistema principal de control de versiones y colaboración.
+
+El repositorio permite:
+
+- gestión de cambios
+- colaboración organizada
+- seguimiento de versiones
+- despliegue automatizado
+- integración continua
+
+---
+
+## ✦ Objetivos del Sistema de Versionado
+
+### ◈ Organización
+
+Mantener una estructura limpia y controlada del proyecto.
+
+### ◌ Seguridad
+
+Preservar versiones estables y recuperación de cambios.
+
+### ⟡ Escalabilidad
+
+Facilitar futuras colaboraciones y expansión del proyecto.
+
+### ◇ Automatización
+
+Integrar despliegues automáticos mediante workflows modernos.
+
+---
+
+## ⌘ Flujo de Trabajo Git
+
+```mermaid
+graph LR
+
+A[Local Development]
+
+A --> B[Git Commit]
+
+B --> C[GitHub Repository]
+
+C --> D[Vercel Deployment]
+
+D --> E[Production]
 ```
 
 ---
 
-# 🌿 Estrategia de Ramas
-
-El proyecto sigue una estrategia de ramas basada en desarrollo incremental.
-
-## Ramas principales
+## ◈ Estructura del Repositorio
 
 ```txt
-main → producción
-develop → desarrollo
-feature/* → nuevas funcionalidades
+ole-sevilla-docs/
+
+├── docs/
+├── src/
+├── static/
+├── docusaurus.config.js
+├── sidebars.js
+├── package.json
+└── README.md
 ```
 
 ---
 
-# 🔄 Flujo de Trabajo
+## ◌ Comandos Principales
 
-El flujo de trabajo seguido durante el desarrollo consiste en:
+### ✦ Inicializar Repositorio
 
-1. Crear una rama feature.
-2. Implementar funcionalidad.
-3. Realizar commits descriptivos.
-4. Revisar cambios.
-5. Integrar en develop.
-6. Fusionar finalmente en main.
+```bash
+git init
+```
 
----
+### ◉ Añadir Cambios
 
-# 🧠 Convención de Commits
+```bash
+git add .
+```
 
-El proyecto sigue una estructura basada en Conventional Commits.
+### ◈ Crear Commit
 
-## Ejemplos
+```bash
+git commit -m "update project"
+```
 
-```txt
-feat: añadir rutas interactivas
-fix: corregir sistema login
-style: mejorar diseño responsive
-refactor: reorganizar componentes
-docs: actualizar documentación
+### ◌ Subir a GitHub
+
+```bash
+git push origin main
 ```
 
 ---
 
-# 🔒 Control de Calidad
+## ✦ Convención de Commits
 
-Antes de integrar cambios en la rama principal se verifican:
+El proyecto sigue una estructura organizada para facilitar el seguimiento de cambios.
 
-- funcionamiento general
-- estructura del proyecto
-- errores visuales
-- conflictos de integración
+### ◉ Ejemplos
+
+```txt
+feat: add AI scan system
+fix: resolve navbar responsive issue
+docs: update backend documentation
+style: improve footer design
+refactor: optimize services architecture
+```
 
 ---
 
-# 🚀 GitHub
+## ✦ GitHub como Plataforma
 
 GitHub se utiliza para:
 
+- hosting del código
+- colaboración
 - control de versiones
-- trabajo colaborativo
-- despliegue continuo
-- gestión del código fuente
+- integración con Vercel
+- gestión del proyecto
 
 ---
 
-# 📦 Integración Continua
+## ⟡ Versionado del Proyecto
 
-La documentación y el frontend están preparados para integrarse automáticamente con plataformas de despliegue como Vercel.
+El desarrollo sigue un sistema incremental basado en:
+
+- mejoras visuales
+- nuevas funcionalidades
+- optimización frontend
+- evolución IA
+- mejoras UX
+
+---
+
+## ◇ Integración con Deployment
+
+Cada actualización enviada al repositorio activa automáticamente:
+
+- build del proyecto
+- optimización
+- despliegue cloud
+- actualización online
+
+---
+
+### ◉ Continuous Deployment
+
+El proyecto utiliza integración continua conectada con Vercel.
+
+Cada push realizado sobre la rama principal activa automáticamente:
+
+- build del proyecto
+- optimización de assets
+- generación estática
+- despliegue en producción
+
+Esto permite mantener una actualización continua y automática del entorno cloud.
+
+---
+
+## ◌ Escalabilidad Colaborativa
+
+El sistema está preparado para:
+
+- múltiples desarrolladores
+- pull requests
+- code reviews
+- ramas de desarrollo
+- integración continua
+
+---
+
+### ◉ Estrategia de Branches
+
+El proyecto utiliza una estrategia basada en ramas independientes.
+
+#### ◈ main
+
+Contiene la versión estable desplegada en producción.
+
+#### ◌ develop
+
+Utilizada para integración de nuevas funcionalidades.
+
+#### ✦ feature/*
+
+Cada funcionalidad se desarrolla en ramas separadas antes de integrarse en develop o main.
+
+---
+
+## ✦ Filosofía de Desarrollo
+
+> ✦ “Cada commit representa una evolución del producto.”
+
+---

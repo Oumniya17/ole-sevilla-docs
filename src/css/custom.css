@@ -89,29 +89,45 @@ body {
 .navbar__brand {
 
   gap: 0.8rem;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  margin-top: -25px;
 }
 
 .navbar__logo img {
 
-  height: 40px !important;
+  height: 58px !important;
+
+  width: auto;
+
+  transform:
+    scale(1.15);
+
+  transition:
+    all 0.3s ease;
 
   filter:
-    drop-shadow(0 0 12px rgba(255,80,120,0.25));
-
-  transition: all 0.3s ease;
+    drop-shadow(0 0 12px rgba(255,90,140,0.25));
 }
 
 .navbar__logo img:hover {
 
-  transform: scale(1.06);
+  transform:
+    scale(1.22);
 
   filter:
-    drop-shadow(0 0 20px rgba(255,80,120,0.7));
+    drop-shadow(0 0 20px rgba(255,90,140,0.45));
 }
 
 .navbar__title {
 
-  font-size: 1.35rem;
+  display: block !important;
+
+  font-size: 1.4rem;
+
   font-weight: 700;
 
   background:
@@ -126,6 +142,8 @@ body {
   -webkit-text-fill-color: transparent;
 
   letter-spacing: -0.5px;
+
+  margin-left: 0.2rem;
 }
 
 .navbar__items {
@@ -137,11 +155,15 @@ body {
 
   color: rgba(255,255,255,0.82) !important;
 
+  font-size: 1rem;
+
   font-weight: 600;
 
-  padding: 0.65rem 1rem;
+  padding: 0.45rem 0.6rem;
 
-  border-radius: 14px;
+  border-radius: 12px;
+
+  letter-spacing: -0.2px;
 
   transition: all 0.25s ease;
 }
@@ -171,6 +193,54 @@ body {
 
   box-shadow:
     0 0 20px rgba(255,80,120,0.1);
+}
+
+/*
+==================================================
+RESPONSIVE NAVBAR FIX
+==================================================
+*/
+
+@media screen and (max-width: 1400px) {
+
+  .navbar__items {
+
+    gap: 0.2rem;
+  }
+
+  .navbar__link {
+
+    font-size: 0.92rem;
+
+    padding: 0.55rem 0.65rem;
+  }
+
+  .navbar__logo img {
+
+    height: 48px !important;
+  }
+}
+
+/*
+==================================================
+TABLET
+==================================================
+*/
+
+@media screen and (max-width: 1200px) {
+
+  .navbar__link {
+
+    font-size: 0.82rem;
+
+    padding: 0.45rem 0.45rem;
+  }
+
+  .navbar {
+
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
 }
 
 /* =========================================================
@@ -407,42 +477,301 @@ table tr {
 }
 
 /* =========================================================
-   FOOTER
+   FOOTER FINAL 2026
 ========================================================= */
 
 .footer {
+  position: relative;
+
+  overflow: hidden;
 
   background:
-    rgba(5,5,15,0.96);
+    radial-gradient(
+      circle at top left,
+      rgba(255,70,130,0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255,90,140,0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #070512 0%,
+      #090014 100%
+    );
 
   border-top:
     1px solid rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(20px);
 }
 
 /* =========================================================
-   SCROLLBAR
+   GLOW
 ========================================================= */
 
-::-webkit-scrollbar {
+.footer::before {
+  content: '';
 
-  width: 10px;
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,70,130,0.08),
+      transparent 60%
+    );
+
+  pointer-events: none;
 }
 
-::-webkit-scrollbar-track {
+.footer::after {
+  content: '';
 
-  background: #070512;
-}
+  position: absolute;
 
-::-webkit-scrollbar-thumb {
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 500px;
+  height: 2px;
 
   background:
     linear-gradient(
-      180deg,
-      #ff5f7a,
-      #ff8aa0
+      90deg,
+      transparent,
+      rgba(255,90,140,0.95),
+      transparent
     );
 
+  box-shadow:
+    0 0 25px rgba(255,90,140,0.8);
+}
+
+/* =========================================================
+   FOOTER LINKS GRID
+========================================================= */
+
+.footer__links {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* =========================================================
+   TITLES
+========================================================= */
+
+.footer__title {
+  position: relative;
+
+  color: #ffffff;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 2rem;
+}
+
+.footer__title::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+  bottom: -10px;
+
+  width: 60px;
+  height: 2px;
+
   border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff4f88,
+      #ff7b7b
+    );
+
+  box-shadow:
+    0 0 15px rgba(255,80,120,0.7);
+}
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.footer__link-item {
+  position: relative;
+
+  color:
+    rgba(255,255,255,0.72);
+
+  transition:
+    all 0.3s ease;
+
+  font-weight: 500;
+}
+
+.footer__link-item::before {
+  content: '';
+
+  position: absolute;
+
+  left: -12px;
+  top: 50%;
+
+  transform:
+    translateY(-50%)
+    scale(0);
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #ff5c8a;
+
+  box-shadow:
+    0 0 12px rgba(255,92,138,0.8);
+
+  transition:
+    all 0.3s ease;
+}
+
+.footer__link-item:hover {
+  color: #ff5c8a;
+
+  transform: translateX(6px);
+
+  text-shadow:
+    0 0 12px rgba(255,90,140,0.8);
+}
+
+.footer__link-item:hover::before {
+  transform:
+    translateY(-50%)
+    scale(1);
+}
+
+/* =========================================================
+   BRAND AREA
+========================================================= */
+
+.footer-brand {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 140px;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.footer-logo {
+
+  width: 260px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+
+  filter:
+    drop-shadow(0 0 20px rgba(255,80,140,0.45))
+    drop-shadow(0 0 60px rgba(255,80,140,0.22));
+}
+
+.footer-logo:hover {
+
+  transform:
+    scale(1.05);
+
+  filter:
+    drop-shadow(0 0 25px rgba(255,80,140,0.85))
+    drop-shadow(0 0 60px rgba(255,80,140,0.35));
+}
+
+/* =========================================================
+   REMOVE EMPTY TITLE
+========================================================= */
+
+.footer .footer__col:first-child .footer__title {
+  display: none;
+}
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer__bottom {
+  position: relative;
+
+  border-top:
+    1px solid rgba(255,255,255,0.06);
+
+  padding-top: 2rem;
+
+  backdrop-filter: blur(20px);
+
+  color:
+    rgba(255,255,255,0.6);
+}
+
+.footer__copyright {
+  opacity: 0.75;
+
+  letter-spacing: 1px;
+
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 996px) {
+
+  .footer-brand {
+
+    justify-content: flex-start;
+  }
+
+  .footer-logo {
+
+    width: 140px;
+  }
+
+  .footer::after {
+
+    width: 220px;
+  }
+
+  .footer__links {
+
+    gap: 3rem;
+  }
 }
 
 /* =========================================================
@@ -501,5 +830,352 @@ table tr {
   .menu {
 
     padding-bottom: 5rem;
+  }
+}
+
+/*
+==================================================
+FINAL MOBILE EXPERIENCE
+==================================================
+*/
+
+@media screen and (max-width: 996px) {
+
+  /*
+  ==============================================
+  NAVBAR
+  ==============================================
+  */
+
+  .navbar {
+
+    height: 72px;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar__brand {
+
+    margin-top: -18px;
+  }
+
+  .navbar__logo img {
+
+    height: 52px !important;
+
+    transform: scale(1.08);
+  }
+
+  /*
+  ==============================================
+  MOBILE MENU OVERLAY
+  ==============================================
+  */
+
+  .navbar-sidebar {
+
+    position: fixed !important;
+
+    inset: 0;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    z-index: 999999 !important;
+
+    background:
+      rgba(3,0,12,0.97) !important;
+
+    backdrop-filter: blur(30px);
+
+    overflow-y: auto;
+
+    padding-top: 6rem;
+  }
+
+  .navbar-sidebar__backdrop {
+
+    background:
+      rgba(0,0,0,0.75);
+
+    backdrop-filter: blur(10px);
+  }
+
+  /*
+  ==============================================
+  REMOVE EXTRA PANELS
+  ==============================================
+  */
+
+  .theme-doc-sidebar-container,
+  .table-of-contents,
+  aside,
+  .navbar-sidebar__brand,
+  .navbar-sidebar__back {
+
+    display: none !important;
+  }
+
+  /*
+  ==============================================
+  MENU
+  ==============================================
+  */
+
+  .menu {
+
+    padding: 2rem;
+  }
+
+  .menu__list {
+
+    transform: none !important;
+  }
+
+  /*
+  ==============================================
+  MENU LINKS
+  ==============================================
+  */
+
+  .menu__link {
+
+    background: transparent !important;
+
+    border: none !important;
+
+    border-radius: 0 !important;
+
+    padding: 1.15rem 0;
+
+    margin: 0;
+
+    font-size: 1.35rem;
+
+    font-weight: 700;
+
+    color:
+      rgba(255,255,255,0.85);
+
+    transition:
+      all 0.25s ease;
+  }
+
+  .menu__link:hover {
+
+    color: #ff6b9c;
+
+    transform:
+      translateX(6px);
+  }
+
+  .menu__link--active {
+
+    color: #ff6b9c !important;
+  }
+
+  /*
+  ==============================================
+  REMOVE ARROWS
+  ==============================================
+  */
+
+  .menu__caret,
+  .menu__link::after {
+
+    display: none !important;
+  }
+
+  /*
+  ==============================================
+  CLOSE BUTTON
+  ==============================================
+  */
+
+  .navbar-sidebar__close {
+
+    position: fixed;
+
+    top: 18px;
+    right: 18px;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    background:
+      rgba(255,255,255,0.04);
+
+    border:
+      1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+      all 0.3s ease;
+  }
+
+  .navbar-sidebar__close:hover {
+
+    background:
+      rgba(255,90,140,0.15);
+
+    border:
+      1px solid rgba(255,90,140,0.25);
+
+    transform:
+      rotate(90deg);
+  }
+
+  /*
+  ==============================================
+  DOC CONTENT
+  ==============================================
+  */
+
+  .theme-doc-markdown {
+
+    padding: 1.5rem;
+  }
+
+  .theme-doc-markdown h1 {
+
+    font-size: 2.4rem;
+  }
+
+  .theme-doc-markdown h2 {
+
+    font-size: 1.6rem;
+  }
+
+  /*
+  ==============================================
+  FOOTER
+  ==============================================
+  */
+
+  .footer-brand {
+
+    justify-content: center;
+  }
+
+  .footer-logo {
+
+    width: 150px;
+  }
+}
+
+
+/*
+==================================================
+MOBILE MENU TITLE
+==================================================
+*/
+
+@media screen and (max-width: 996px) {
+
+  /*
+  ==============================================
+  SHOW BRAND AGAIN
+  ==============================================
+  */
+
+  .navbar-sidebar__brand {
+
+    display: flex !important;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 82px;
+
+    padding-left: 1.5rem;
+
+    z-index: 999999;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(3,0,12,0.96),
+        rgba(3,0,12,0.78)
+      );
+
+    backdrop-filter: blur(24px);
+
+    border-bottom:
+      1px solid rgba(255,255,255,0.05);
+  }
+
+  /*
+  ==============================================
+  MOBILE LOGO
+  ==============================================
+  */
+
+  .navbar-sidebar__brand .navbar__logo img {
+
+    display: block !important;
+
+    height: 42px !important;
+
+    width: auto;
+  }
+
+  /*
+  ==============================================
+  MOBILE TITLE
+  ==============================================
+  */
+
+  .navbar-sidebar__brand .navbar__title {
+
+    display: block !important;
+
+    font-size: 1.4rem;
+
+    margin-left: 0.8rem;
+
+    font-weight: 700;
+
+    background:
+      linear-gradient(
+        90deg,
+        #ffffff,
+        #ff8aa0,
+        #ff5f7a
+      );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /*
+  ==============================================
+  MENU PADDING
+  ==============================================
+  */
+
+  .navbar-sidebar {
+
+    padding-top: 7rem;
   }
 }

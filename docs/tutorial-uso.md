@@ -1,144 +1,216 @@
-# Tutorial de Uso
+# ◇ User Experience Flow
 
-## Introducción
-
-Olé Sevilla ha sido diseñada para ofrecer una experiencia cultural inmersiva y sencilla tanto para turistas como para usuarios locales.
-
-La aplicación permite explorar Sevilla mediante inteligencia artificial, rutas interactivas y experiencias culturales gamificadas.
+> ✦ Immersive cultural exploration powered by intelligent interactions.
 
 ---
 
-# 👤 Registro de Usuario
+## ◉ Visión General
 
-## Paso 1
+Olé Sevilla está diseñado para ofrecer una experiencia intuitiva, inmersiva y emocional desde el primer momento.
 
-Acceder a la pantalla de registro.
+El flujo de navegación busca combinar:
 
----
-
-## Paso 2
-
-Introducir:
-
-- nombre
-- email
-- contraseña
+- exploración cultural
+- interacción visual
+- inteligencia artificial
+- descubrimiento dinámico
 
 ---
 
-## Paso 3
+## ✦ Flujo Principal de Usuario
 
-Confirmar la creación de la cuenta.
+```mermaid
+flowchart LR
 
----
-
-# 🔐 Inicio de Sesión
-
-## Paso 1
-
-Acceder a la pantalla login.
-
----
-
-## Paso 2
-
-Introducir email y contraseña.
+A[Landing Experience]
+--> B[Explorar Documentación]
+--> C[Descubrir Módulos]
+--> D[Interactuar con IA]
+--> E[Experiencia Cultural]
+```
 
 ---
 
-## Paso 3
+## ◈ Landing Experience
 
-Acceder al panel principal de la aplicación.
+La homepage introduce:
 
----
+- identidad visual futurista
+- branding inmersivo
+- navegación principal
+- acceso rápido a documentación
 
-# 📸 Uso de Scan&Olé
+### ◌ Elementos Principales
 
-## Paso 1
-
-Abrir la sección Scan&Olé.
-
----
-
-## Paso 2
-
-Escanear un monumento o lugar emblemático de Sevilla.
-
----
-
-## Paso 3
-
-La inteligencia artificial identificará el lugar automáticamente.
+- hero cinematográfico
+- glow effects
+- glassmorphism UI
+- animated cards
+- responsive layout
 
 ---
 
-## Paso 4
+## 👤 Registro de Usuario
 
-El usuario podrá escuchar información histórica y cultural mediante narración interactiva.
+El sistema está preparado para permitir registro e inicio de sesión mediante autenticación segura.
 
----
+### ◌ Flujo de Registro
 
-# 🗺️ Uso de las Rutas Interactivas
-
-## Paso 1
-
-Seleccionar una ruta temática.
-
-Ejemplos:
-
-- Flamenco Tour
-- Gastro Tour
-- Romantic Route
-- Sevilla Express
+1. Acceder a la plataforma
+2. Crear cuenta
+3. Introducir email y contraseña
+4. Confirmar acceso
 
 ---
 
-## Paso 2
+## 🔐 Inicio de Sesión
 
-Seguir el recorrido mediante el mapa interactivo.
+Los usuarios autenticados pueden acceder a funcionalidades personalizadas y experiencias inteligentes.
 
----
+### ✦ Funcionalidades futuras
 
-## Paso 3
-
-Desbloquear puntos, logros y recompensas culturales.
-
----
-
-# 👥 Uso de Olé Connect
-
-La plataforma permite:
-
-- publicar experiencias
-- compartir fotografías
-- interactuar con turistas y sevillanos
-- participar en retos culturales
+- progreso cultural
+- rutas guardadas
+- recomendaciones IA
+- experiencia personalizada
 
 ---
 
-# 📖 Diccionario Andaluz
+## ◌ Navegación Principal
 
-La sección Diccionario Andaluz permite:
+El sistema de navegación permite acceder rápidamente a:
 
-- aprender expresiones locales
-- escuchar pronunciaciones
-- jugar minijuegos culturales
-- descubrir vocabulario sevillano
-
----
-
-# 👤 Perfil My Olé
-
-El perfil del usuario muestra:
-
-- progreso
-- puntos
-- rutas completadas
-- logros desbloqueados
-- actividad reciente
+| Sección | Función |
+|---|---|
+| Inicio | Presentación principal |
+| Arquitectura | Sistema técnico |
+| Frontend | UI y experiencia visual |
+| Backend | Infraestructura |
+| Tutorial | Flujo de usuario |
 
 ---
 
-# 📱 Experiencia Responsive
+## ✦ Exploración de Contenido
 
-La plataforma está diseñada siguiendo una filosofía mobile-first para facilitar la exploración urbana desde dispositivos móviles.
+La experiencia documental está diseñada para facilitar:
+
+- lectura fluida
+- navegación rápida
+- comprensión visual
+- exploración modular
+
+---
+
+## ⟡ Interacción Inteligente
+
+Los sistemas IA permiten futuras funcionalidades como:
+
+- reconocimiento visual
+- recomendaciones inteligentes
+- asistentes culturales
+- rutas dinámicas
+- traducción automática
+
+---
+
+## ◇ Experiencia Responsive
+
+El sistema se adapta completamente a:
+
+- desktop
+- tablets
+- smartphones
+
+### ◌ Características Responsive
+
+- layouts flexibles
+- navegación móvil
+- typography adaptativa
+- componentes escalables
+
+---
+
+## ✦ Experiencia Visual
+
+El diseño visual utiliza:
+
+- iluminación neon suave
+- gradients futuristas
+- glassmorphism
+- motion effects
+- cinematic layouts
+
+---
+
+## ⌘ Flujo UX
+
+```mermaid
+sequenceDiagram
+
+participant U as Usuario
+participant UI as Frontend
+participant API as Backend
+participant IA as AI Services
+
+U->>UI: interacción visual
+
+UI->>API: solicitud datos
+
+API->>IA: procesamiento inteligente
+
+IA-->>API: respuesta IA
+
+API-->>UI: contenido dinámico
+
+UI-->>U: experiencia inmersiva
+```
+
+---
+
+## 🗺️ Flujo de Navegación
+
+El usuario puede:
+
+- explorar documentación
+- descubrir rutas culturales
+- interactuar con sistemas IA
+- acceder a experiencias inmersivas
+- navegar entre módulos dinámicos
+
+---
+
+## 📸 Experiencias Inteligentes
+
+La plataforma integra conceptos futuros como:
+
+### ✦ Scan&Olé
+
+Reconocimiento visual de monumentos mediante IA.
+
+### 🎵 Sound&Olé
+
+Detección musical y experiencias sonoras culturales.
+
+### 🧠 Smart Recommendations
+
+Recomendaciones inteligentes basadas en interacción del usuario.
+
+---
+
+## ◌ Filosofía UX
+
+La experiencia busca transmitir:
+
+- descubrimiento
+- emoción
+- modernidad
+- cultura
+- inmersión digital
+
+---
+
+## ✦ Filosofía de Experiencia
+
+> ✦ “Explorar una ciudad también puede ser una experiencia inteligente.”
+
+---

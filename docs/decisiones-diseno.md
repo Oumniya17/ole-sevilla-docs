@@ -1,115 +1,152 @@
-# Decisiones de Diseño
+# ◇ Design System
 
-## Introducción
-
-Olé Sevilla ha sido diseñada como una experiencia cultural inmersiva donde la tecnología y la identidad andaluza conviven dentro de una interfaz moderna y emocional.
-
-Cada decisión técnica y visual del proyecto ha sido tomada buscando equilibrio entre innovación, usabilidad y narrativa cultural.
+> ✦ Emotional interfaces inspired by culture, technology and futuristic experiences.
 
 ---
 
-# 🎨 Diseño Visual
+## ◉ Filosofía de Diseño
 
-La identidad visual del proyecto combina:
+El sistema visual de Olé Sevilla busca fusionar:
 
+- cultura andaluza
+- diseño emocional
 - minimalismo futurista
-- estética andaluza
-- gradientes cálidos
-- diseño inmersivo
-- experiencia emocional
+- interfaces inmersivas
+- experiencias AI-driven
 
-La combinación de colores oscuros, tonos coral y efectos visuales suaves permite crear una atmósfera elegante y moderna.
+La interfaz no solo comunica información: busca transmitir sensaciones.
 
 ---
 
-# 🐝 Sevilla Bee
+## ✦ Objetivos Visuales
 
-La Sevilla Bee se utiliza como símbolo visual del proyecto.
+### ◈ Inmersión
 
-Representa:
+Crear una experiencia visual cinematográfica inspirada en Sevilla nocturna.
+
+### ◌ Modernidad
+
+Diseñar una interfaz alineada con productos digitales de nueva generación.
+
+### ⟡ Claridad
+
+Mantener una estructura limpia y legible.
+
+### ◇ Emoción
+
+Transmitir identidad cultural mediante iluminación, colores y composición visual.
+
+---
+
+## ⌘ Identidad Visual
+
+### ✦ Paleta de Colores
+
+| Color | Uso |
+|---|---|
+| #ff5f7a | Color principal |
+| #ff8aa0 | Gradientes y glow |
+| #070512 | Fondo principal |
+| #120012 | Background depth |
+| #ffffff | Typography |
+
+---
+
+## ◈ Inspiración Visual
+
+El diseño está inspirado en:
+
+- interfaces AI futuristas
+- estética cyberpunk suave
+- glassmorphism
+- productos como Linear y Vercel
+- iluminación neon cinematográfica
+
+---
+
+## ◌ Glassmorphism
+
+La interfaz utiliza múltiples capas translúcidas mediante:
+
+- blur effects
+- transparencias
+- sombras suaves
+- bordes luminosos
+- depth layers
+
+---
+
+## ✦ Typography System
+
+La tipografía principal utilizada es:
+
+### ◉ Space Grotesk
+
+Elegida por:
+
+- estilo moderno
+- geometría futurista
+- alta legibilidad
+- apariencia tecnológica premium
+
+---
+
+## ⟡ Sistema Responsive
+
+El diseño se adapta completamente a:
+
+- desktop
+- tablet
+- dispositivos móviles
+
+### ◇ Estrategias Responsive
+
+- grids flexibles
+- typography escalable
+- spacing adaptativo
+- layouts fluidos
+
+---
+
+## ◌ Componentes Visuales
+
+### ✦ Elementos Principales
+
+- navbar futurista
+- sidebar glassmorphism
+- hero cinematográfico
+- cards interactivas
+- glow effects
+- animated hover states
+
+---
+
+## ⌘ Experiencia de Usuario
+
+La UX busca generar:
 
 - exploración
-- curiosidad
-- interacción cultural
-- conexión entre tecnología y ciudad
+- descubrimiento
+- modernidad
+- conexión cultural
+- inmersión emocional
 
 ---
 
-# 📱 Filosofía Mobile-First
+## ◈ Diseño 2026
 
-La plataforma ha sido diseñada siguiendo una estrategia mobile-first.
+Olé Sevilla adopta principios modernos de UI utilizados en:
 
-Esto permite:
-
-- exploración urbana desde el móvil
-- navegación intuitiva
-- experiencia responsive
-- interacción rápida durante recorridos culturales
+- plataformas SaaS
+- productos AI
+- dashboards futuristas
+- aplicaciones inmersivas
 
 ---
 
-# ⚛️ React + Vite
+## ✦ Filosofía Visual
 
-React fue seleccionado por:
-
-- modularidad
-- reutilización de componentes
-- rendimiento
-- facilidad para crear interfaces dinámicas
-
-Vite permite tiempos de carga rápidos y una experiencia moderna de desarrollo.
+> ✦ “El diseño no solo debe verse futurista.  
+> Debe sentirse vivo.”
 
 ---
-
-# 🧠 Inteligencia Artificial
-
-La integración de IA permite transformar el turismo tradicional en una experiencia interactiva.
-
-La plataforma utiliza reconocimiento visual y sistemas inteligentes para crear experiencias inmersivas.
-
----
-
-# 🗺️ Gamificación
-
-El sistema de rutas, logros y recompensas busca incentivar la exploración cultural mediante mecánicas de gamificación.
-
-Esto mejora la interacción del usuario y aumenta el interés por descubrir la ciudad.
-
----
-
-# 🔌 APIs Externas
-
-Las APIs externas permiten añadir funcionalidades avanzadas sin necesidad de desarrollar sistemas complejos desde cero.
-
-Se utilizan servicios de:
-
-- reconocimiento musical
-- traducción automática
-- text-to-speech
-- mapas interactivos
-
----
-
-# 🌍 Escalabilidad
-
-La arquitectura del proyecto ha sido diseñada para permitir futuras expansiones como:
-
-- Olé París
-- Olé Roma
-- Olé Marrakech
-
-manteniendo la misma base tecnológica y experiencia visual.
-
----
-
-# 🚀 Experiencia de Usuario
-
-La experiencia de usuario está centrada en:
-
-- simplicidad
-- inmersión
-- interacción visual
-- navegación intuitiva
-- conexión emocional con la ciudad
-
-El objetivo principal es que el usuario no solo utilice una aplicación, sino que viva una experiencia cultural digital.

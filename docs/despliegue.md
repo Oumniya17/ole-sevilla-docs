@@ -1,112 +1,195 @@
-# Despliegue en la Nube
+# ◇ Cloud Deployment
 
-## Introducción
-
-Olé Sevilla está diseñada para desplegarse en plataformas cloud modernas permitiendo una arquitectura escalable y accesible desde cualquier dispositivo.
+> ✦ Modern deployment pipeline designed for scalable digital experiences.
 
 ---
 
-# 🌍 Frontend
+## ◉ Visión General
 
-El frontend se despliega utilizando Vercel.
+Olé Sevilla está preparado para ser desplegado en plataformas cloud modernas utilizando workflows automatizados y servicios escalables.
 
-Vercel permite:
+La infraestructura permite:
 
-- despliegue automático
-- integración con GitHub
-- optimización frontend
-- hosting rápido y escalable
-
----
-
-# 🚀 Proceso de Despliegue Frontend
-
-## Paso 1
-
-Subir el proyecto a GitHub.
+- despliegue rápido
+- integración continua
+- hosting moderno
+- actualizaciones automáticas
+- alta disponibilidad
 
 ---
 
-## Paso 2
+## ✦ Objetivos del Despliegue
 
-Acceder a Vercel.
+### ◈ Escalabilidad
 
----
+Preparar la plataforma para futuros módulos y servicios.
 
-## Paso 3
+### ◌ Disponibilidad
 
-Importar el repositorio del proyecto.
+Garantizar acceso estable y rápido desde cualquier dispositivo.
 
----
+### ⟡ Automatización
 
-## Paso 4
+Facilitar actualizaciones mediante integración con GitHub.
 
-Configurar variables de entorno necesarias.
+### ◇ Simplicidad
 
----
-
-## Paso 5
-
-Realizar el despliegue automático.
+Mantener un proceso de deployment limpio y eficiente.
 
 ---
 
-# ⚙️ Variables de Entorno
+## ⌘ Arquitectura Cloud
 
-Ejemplo de variables utilizadas:
+```mermaid
+graph TD
 
-```env
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-GOOGLE_TTS_API=your_api_key
+A[Developer]
+
+A --> B[GitHub Repository]
+
+B --> C[Vercel Deployment]
+
+C --> D[Frontend Production]
+
+D --> E[Usuarios]
 ```
 
 ---
 
-# 🔄 Integración Continua
+## ◈ Plataforma de Despliegue
 
-La plataforma implementa despliegue continuo conectado con GitHub.
+### ✦ Vercel
 
-Cada push realizado en la rama principal genera automáticamente una nueva versión del proyecto.
+La documentación y frontend se despliegan utilizando Vercel debido a:
 
----
-
-# 🔧 Backend
-
-El backend está preparado para desplegarse utilizando plataformas como:
-
-- Render
-- Railway
-
-Estas plataformas permiten desplegar APIs Node.js de forma sencilla y escalable.
+- integración con GitHub
+- despliegues automáticos
+- velocidad de build
+- optimización frontend
+- hosting global
 
 ---
 
-# 🧠 APIs Externas
+## ◌ Workflow de Deployment
 
-Durante el despliegue es necesario configurar correctamente las claves de APIs externas:
+### ◉ Flujo de Trabajo
 
-- TensorFlow.js
-- Audd.io
-- LibreTranslate
-- Google Cloud TTS
-
----
-
-# 🔒 Seguridad
-
-Las variables sensibles se gestionan mediante sistemas de variables de entorno proporcionados por las plataformas cloud.
-
-No se almacenan credenciales directamente en el código fuente.
+1. desarrollo local
+2. commit Git
+3. push a GitHub
+4. build automático
+5. deployment en Vercel
+6. actualización online
 
 ---
 
-# 📱 Accesibilidad
+## ✦ Build Process
 
-El proyecto está diseñado para funcionar correctamente en:
+```mermaid
+flowchart LR
 
-- dispositivos móviles
-- tablets
-- escritorio
+A[Code Changes]
+--> B[Git Push]
+--> C[Vercel Build]
+--> D[Static Generation]
+--> E[Production Deployment]
+```
 
-garantizando una experiencia responsive y accesible.
+---
+
+## ⟡ Comandos Principales
+
+### ◈ Desarrollo Local
+
+```bash
+npm run start
+```
+
+### ◌ Build Producción
+
+```bash
+npm run build
+```
+
+### ✦ Preview Local
+
+```bash
+npm run serve
+```
+
+---
+
+## ◇ Hosting Frontend
+
+La aplicación frontend se distribuye mediante:
+
+- static generation
+- optimized assets
+- CDN delivery
+- caching inteligente
+
+---
+
+## ◌ Integración Continua
+
+El sistema permite futuras integraciones CI/CD mediante:
+
+- GitHub Actions
+- pipelines automáticos
+- testing automatizado
+- builds inteligentes
+
+---
+
+## ✦ Escalabilidad Cloud
+
+La infraestructura puede evolucionar hacia:
+
+- Docker containers
+- Kubernetes
+- microservicios
+- edge deployment
+- serverless architecture
+
+---
+
+## 🌍 Production Deployment
+
+La documentación oficial de Olé Sevilla está desplegada en la nube mediante Vercel.
+
+### 🔗 URL Pública
+
+```txt
+https://ole-sevilla-docs.vercel.app
+```
+
+---
+
+## ✦ Características del Deployment
+
+- despliegue automático
+- integración continua
+- builds automáticos
+- optimización estática
+- hosting cloud global
+
+---
+
+## ◉ Continuous Deployment
+
+Cada push realizado sobre la rama principal activa automáticamente:
+
+- build del proyecto
+- generación estática
+- optimización frontend
+- despliegue online
+
+Esto permite mantener una actualización continua y automática de la plataforma.
+
+---
+
+## ⌘ Filosofía DevOps
+
+> ✦ “Desplegar debe ser tan elegante como desarrollar.”
+
+---

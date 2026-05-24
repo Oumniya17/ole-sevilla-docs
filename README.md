@@ -1,41 +1,96 @@
-# Website
+# Olé Sevilla
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+> ✦ The Cultural AI Experience
 
-## Installation
+---
 
-```bash
-yarn
+## ◉ Overview
+
+Olé Sevilla is an immersive digital platform designed to transform how tourists and citizens explore the city of Seville through artificial intelligence, interactive storytelling and futuristic design systems.
+
+The project combines:
+
+- ◌ Artificial Intelligence
+- ✦ Gamification
+- ◈ Cultural Exploration
+- ⟡ Interactive Experiences
+- ◇ Emotional Design
+
+to create a next-generation tourism experience.
+
+---
+
+## ✦ Main Technologies
+
+| Technology | Purpose |
+|---|---|
+| React | Frontend UI |
+| Vite | Fast build system |
+| Docusaurus | Documentation platform |
+| Node.js | Backend services |
+| Express | REST API |
+| MongoDB | Database |
+| TensorFlow.js | AI services |
+| Leaflet | Interactive maps |
+
+---
+
+## ⌘ Architecture
+
+```mermaid
+graph TD
+
+A[Frontend React]
+--> B[Express API]
+
+B --> C[MongoDB]
+
+B --> D[AI Services]
+B --> E[Maps]
 ```
 
-## Local Development
+---
+
+## ◈ Features
+
+- immersive UI experience
+- futuristic design system
+- responsive layouts
+- AI-ready architecture
+- interactive cultural modules
+- scalable backend system
+
+---
+
+## ◌ Local Development
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+---
 
-## Build
+## ✦ Production Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+---
 
-## Deployment
+## ⟡ Deployment
 
-Using SSH:
+The project is designed for deployment using:
 
-```bash
-USE_SSH=true yarn deploy
-```
+- Vercel
+- GitHub
+- modern CI/CD workflows
 
-Not using SSH:
+---
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## ◇ Design Philosophy
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+> ✦ “Technology should amplify culture, not replace it.”
+
+---

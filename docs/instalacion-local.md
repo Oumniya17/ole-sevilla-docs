@@ -1,203 +1,209 @@
-# Instalación Local
+# ◇ Local Development
 
-## Requisitos Previos
-
-Para ejecutar Olé Sevilla en local es necesario disponer de:
-
-- Node.js
-- npm
-- MongoDB
-- Git
+> ✦ Modern local environment designed for scalable frontend development.
 
 ---
 
-# 📦 Versiones Recomendadas
+## ◉ Visión General
+
+Olé Sevilla puede ejecutarse localmente mediante un entorno moderno basado en Node.js, Vite y Docusaurus.
+
+El sistema permite:
+
+- desarrollo rápido
+- hot reload
+- testing visual
+- documentación interactiva
+- experiencia responsive en tiempo real
+
+---
+
+## ✦ Requisitos Previos
+
+Antes de ejecutar el proyecto es necesario instalar:
+
+| Herramienta | Versión Recomendada |
+|---|---|
+| Node.js | 18+ |
+| npm | 10+ |
+| Git | Última versión |
+| VS Code | Recomendado |
+
+---
+
+### ◉ Base de Datos
+
+El sistema backend está preparado para trabajar con MongoDB como base de datos principal.
+
+Es necesario disponer de una instancia local o cloud de MongoDB para ejecutar funcionalidades avanzadas del sistema.
+
+---
+
+## ⌘ Clonar el Proyecto
+
+### ◈ Git Clone
 
 ```bash
-Node.js >= 20
-npm >= 10
-MongoDB >= 7
+git clone https://github.com/your-username/ole-sevilla-docs.git
 ```
 
 ---
 
-# 📥 Clonar el Proyecto
+## ◌ Acceder al Proyecto
 
 ```bash
-git clone https://github.com/ole-sevilla/ole-sevilla.git
+cd ole-sevilla-docs
 ```
 
 ---
 
-# 📂 Acceder al Proyecto
-
-```bash
-cd ole-sevilla
-```
-
----
-
-# 📦 Instalar Dependencias
-
-```bash
-npm install
-```
-
----
-
-# ⚙️ Variables de Entorno
-
-El proyecto utiliza variables de entorno para proteger información sensible.
-
-Ejemplo de configuración:
-
-```env
-PORT=3000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_secret_key
-GOOGLE_TTS_API=your_api_key
-```
-
----
-
-# 🚀 Ejecutar el Proyecto
-
-```bash
-npm run dev
-```
-
----
-
-# 🌍 Frontend
-
-El frontend se ejecuta mediante Vite.
-
-Por defecto estará disponible en:
-
-```txt
-http://localhost:5173
-```
-
----
-
-# 🔧 Backend
-
-El backend está preparado para ejecutarse mediante Node.js + Express.
-
----
-
-# 🧠 APIs Externas
-
-La plataforma utiliza diferentes APIs externas para funcionalidades avanzadas:
-
-- TensorFlow.js
-- Audd.io
-- LibreTranslate
-- Google Cloud TTS
-
----
-
-# 📱 Experiencia Responsive
-
-Olé Sevilla ha sido desarrollada siguiendo una filosofía mobile-first para garantizar compatibilidad en dispositivos móviles y escritorio.# Instalación Local
-
-## Requisitos Previos
-
-Para ejecutar Olé Sevilla en local es necesario disponer de:
-
-- Node.js
-- npm
-- MongoDB
-- Git
-
----
-
-# 📦 Versiones Recomendadas
-
-```bash
-Node.js >= 20
-npm >= 10
-MongoDB >= 7
-```
-
----
-
-# 📥 Clonar el Proyecto
-
-```bash
-git clone https://github.com/ole-sevilla/ole-sevilla.git
-```
-
----
-
-# 📂 Acceder al Proyecto
-
-```bash
-cd ole-sevilla
-```
-
----
-
-# 📦 Instalar Dependencias
+## ✦ Instalar Dependencias
 
 ```bash
 npm install
 ```
 
+Este comando instalará todas las librerías necesarias del proyecto.
+
 ---
 
-# ⚙️ Variables de Entorno
+## ⚙️ Variables de Entorno
 
-El proyecto utiliza variables de entorno para proteger información sensible.
+El proyecto utiliza variables de entorno para proteger claves y configuraciones sensibles.
 
-Ejemplo de configuración:
+### ◉ Ejemplo
 
 ```env
-PORT=3000
-MONGO_URI=your_mongodb_uri
+MONGO_URI=your_database_url
 JWT_SECRET=your_secret_key
-GOOGLE_TTS_API=your_api_key
+OPENAI_API_KEY=your_api_key
 ```
+
+### ✦ Objetivo
+
+Permitir:
+
+- integración IA
+- conexión base de datos
+- autenticación segura
+- despliegue cloud
 
 ---
 
-# 🚀 Ejecutar el Proyecto
+## ◈ Ejecutar Entorno Local
 
 ```bash
-npm run dev
+npm run start
 ```
 
----
-
-# 🌍 Frontend
-
-El frontend se ejecuta mediante Vite.
-
-Por defecto estará disponible en:
+La aplicación estará disponible en:
 
 ```txt
-http://localhost:5173
+http://localhost:3000
 ```
 
 ---
 
-# 🔧 Backend
+## ◌ Build de Producción
 
-El backend está preparado para ejecutarse mediante Node.js + Express.
+Para generar una versión optimizada:
 
----
-
-# 🧠 APIs Externas
-
-La plataforma utiliza diferentes APIs externas para funcionalidades avanzadas:
-
-- TensorFlow.js
-- Audd.io
-- LibreTranslate
-- Google Cloud TTS
+```bash
+npm run build
+```
 
 ---
 
-# 📱 Experiencia Responsive
+## ✦ Preview del Build
 
-Olé Sevilla ha sido desarrollada siguiendo una filosofía mobile-first para garantizar compatibilidad en dispositivos móviles y escritorio.
+```bash
+npm run serve
+```
+
+---
+
+## ⟡ Arquitectura Local
+
+```mermaid
+graph TD
+
+A[Developer]
+
+A --> B[VS Code]
+
+B --> C[Node.js]
+
+C --> D[Docusaurus]
+
+D --> E[Localhost 3000]
+```
+
+---
+
+## ◇ Estructura Principal
+
+```txt
+ole-sevilla-docs/
+
+├── docs/
+├── src/
+├── static/
+├── package.json
+├── sidebars.js
+└── docusaurus.config.js
+```
+
+---
+
+## ◌ Tecnologías Locales
+
+### ✦ Frontend
+
+- React
+- Vite
+- Docusaurus
+
+### ◈ Diseño
+
+- CSS Modules
+- Glassmorphism UI
+- Responsive Layouts
+
+### ◌ Desarrollo
+
+- Git
+- npm
+- VS Code
+
+---
+
+## 🔐 Integraciones Futuras
+
+La arquitectura está preparada para incorporar sistemas de autenticación externa como:
+
+- Google Authentication
+- OAuth Providers
+- Login social
+- Single Sign-On
+
+Estas integraciones permitirán mejorar la experiencia de acceso y personalización del usuario.
+
+---
+
+## ✦ Experiencia de Desarrollo
+
+El entorno local ofrece:
+
+- hot reload
+- compilación rápida
+- edición en tiempo real
+- preview responsive
+- modularidad visual
+
+---
+
+## ⌘ Filosofía de Desarrollo
+
+> ✦ “Un entorno moderno acelera la creatividad y la innovación.”
+
+---

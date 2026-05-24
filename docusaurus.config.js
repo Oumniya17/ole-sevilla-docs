@@ -1,72 +1,68 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+
+  title: 'Olé Sevilla',
+
+  tagline: 'The Cultural AI Experience',
+
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://your-domain.com',
+
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ole-sevilla',
+
+  projectName: 'ole-sevilla-docs',
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  onBrokenMarkdownLinks: 'warn',
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
+  /*
+  =====================================================
+  MERMAID
+  =====================================================
+  */
+
+  themes: ['@docusaurus/theme-mermaid'],
+
+  markdown: {
+    mermaid: true,
+  },
+
+  /*
+  =====================================================
+  PRESETS
+  =====================================================
+  */
+
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
+          routeBasePath: '/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+
+        blog: false,
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -74,95 +70,265 @@ const config = {
     ],
   ],
 
+  /*
+  =====================================================
+  THEME CONFIG
+  =====================================================
+  */
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+
+      image: 'img/ole-sevilla-preview.png',
+
       colorMode: {
         respectPrefersColorScheme: true,
       },
+
+      /*
+      =====================================================
+      NAVBAR
+      =====================================================
+      */
+
 navbar: {
-  title: 'Olé Sevilla',
+
+  title: '',
+
   logo: {
-    alt: 'Olé Sevilla Logo',
+
+    alt: 'Olé Sevilla',
+
     src: 'img/logo.png',
   },
-  items: [
+
+items: [
+
+  {
+    label: 'Olé Sevilla',
+    to: '/intro',
+    position: 'left',
+  },
+
+  {
+    label: 'System Architecture',
+    to: '/arquitectura',
+    position: 'left',
+  },
+
+  {
+    label: 'Design System',
+    to: '/decisiones-diseno',
+    position: 'left',
+  },
+
+  {
+    label: 'Frontend',
+    to: '/frontend',
+    position: 'left',
+  },
+
+  {
+    label: 'Backend System',
+    to: '/backend',
+    position: 'left',
+  },
+
+  {
+    label: 'Local Development',
+    to: '/instalacion-local',
+    position: 'left',
+  },
+
+  {
+    label: 'Cloud Deployment',
+    to: '/despliegue',
+    position: 'left',
+  },
+
+  {
+    label: 'GitHub & Version Control',
+    to: '/github',
+    position: 'left',
+  },
+
+  {
+    label: 'User Experience Flow',
+    to: '/tutorial-uso',
+    position: 'left',
+  },
+],
+},
+
+/*
+==================================================
+FOOTER FINAL PREMIUM 2026
+==================================================
+*/
+
+footer: {
+
+  style: 'dark',
+
+  links: [
+
+    /*
+    ==================================================
+    BRAND LOGO
+    ==================================================
+    */
+
     {
-      to: '/docs/intro',
-      label: 'Inicio',
-      position: 'left',
+      title: ' ',
+
+      items: [
+
+        {
+          html: `
+            <div class="footer-brand">
+
+              <img
+                src="/img/logo.png"
+                alt="Olé Sevilla"
+                class="footer-logo"
+              />
+
+            </div>
+          `,
+        },
+      ],
     },
+
+    /*
+    ==================================================
+    PROYECTO
+    ==================================================
+    */
+
     {
-      to: '/docs/arquitectura',
-      label: 'Arquitectura',
-      position: 'left',
+      title: 'PROYECTO',
+
+      items: [
+
+        {
+          label: 'Arquitectura',
+          to: '/arquitectura',
+        },
+
+        {
+          label: 'Frontend',
+          to: '/frontend',
+        },
+
+        {
+          label: 'Backend',
+          to: '/backend',
+        },
+
+        {
+          label: 'Tutorial',
+          to: '/tutorial-uso',
+        },
+
+        {
+          label: 'Diseño',
+          to: '/decisiones-diseno',
+        },
+      ],
     },
+
+    /*
+    ==================================================
+    TECNOLOGÍAS
+    ==================================================
+    */
+
     {
-      to: '/docs/frontend',
-      label: 'Frontend',
-      position: 'left',
+      title: 'TECNOLOGÍAS',
+
+      items: [
+
+        {
+          label: 'React',
+          href: 'https://react.dev/',
+        },
+
+        {
+          label: 'Node.js',
+          href: 'https://nodejs.org/',
+        },
+
+        {
+          label: 'MongoDB',
+          href: 'https://mongodb.com/',
+        },
+
+        {
+          label: 'TensorFlow.js',
+          href: 'https://tensorflow.org/',
+        },
+
+        {
+          label: 'Docusaurus',
+          href: 'https://docusaurus.io/',
+        },
+
+        {
+          label: 'Vite',
+          href: 'https://vitejs.dev/',
+        },
+      ],
     },
+
+    /*
+    ==================================================
+    REPOSITORIO
+    ==================================================
+    */
+
     {
-      to: '/docs/backend',
-      label: 'Backend',
-      position: 'left',
-    },
-    {
-      to: '/docs/tutorial-uso',
-      label: 'Tutorial',
-      position: 'left',
+      title: 'REPOSITORIO',
+
+      items: [
+
+        {
+          label: 'GitHub',
+          href: 'https://github.com/',
+        },
+
+        {
+          label: 'Deployment',
+          to: '/despliegue',
+        },
+
+        {
+          label: 'Instalación',
+          to: '/instalacion-local',
+        },
+
+        {
+          label: 'UX Flow',
+          to: '/tutorial-uso',
+        },
+      ],
     },
   ],
+
+  copyright:
+    `© ${new Date().getFullYear()} Olé Sevilla — Designed for immersive cultural experiences.`,
 },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+
+      /*
+      =====================================================
+      CODE THEME
+      =====================================================
+      */
+
       prism: {
+
         theme: prismThemes.github,
+
         darkTheme: prismThemes.dracula,
       },
     }),
