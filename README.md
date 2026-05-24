@@ -1,96 +1,105 @@
-# Olé Sevilla
+<div align="center">
 
-> ✦ The Cultural AI Experience
+<img width="170" src="https://github.com/user-attachments/assets/0ff16c37-155b-4f49-9ec3-8cba88fb51a2" />
 
----
+### *Immersive technical documentation powered by Docusaurus.*
 
-## ◉ Overview
+*Frontend • Backend • UX/UI • Cloud • AI Architecture*
 
-Olé Sevilla is an immersive digital platform designed to transform how tourists and citizens explore the city of Seville through artificial intelligence, interactive storytelling and futuristic design systems.
+<br/>
 
-The project combines:
+### ◇ Live Documentation
 
-- ◌ Artificial Intelligence
-- ✦ Gamification
-- ◈ Cultural Exploration
-- ⟡ Interactive Experiences
-- ◇ Emotional Design
+https://ole-sevilla-docs.vercel.app
 
-to create a next-generation tourism experience.
+</div>
 
 ---
 
-## ✦ Main Technologies
+# ◇ Overview
 
-| Technology | Purpose |
-|---|---|
-| React | Frontend UI |
-| Vite | Fast build system |
-| Docusaurus | Documentation platform |
-| Node.js | Backend services |
-| Express | REST API |
-| MongoDB | Database |
-| TensorFlow.js | AI services |
-| Leaflet | Interactive maps |
+Technical documentation platform created with **Docusaurus** for the Olé Sevilla ecosystem.
 
----
+### ✦ Includes
 
-## ⌘ Architecture
-
-```mermaid
-graph TD
-
-A[Frontend React]
---> B[Express API]
-
-B --> C[MongoDB]
-
-B --> D[AI Services]
-B --> E[Maps]
-```
+- ◇ Frontend Architecture
+- ◇ Backend System
+- ◇ Cloud Deployment
+- ◇ Authentication
+- ◇ Design System
+- ◇ Responsive UX
+- ◇ Git Workflow
 
 ---
 
-## ◈ Features
-
-- immersive UI experience
-- futuristic design system
-- responsive layouts
-- AI-ready architecture
-- interactive cultural modules
-- scalable backend system
-
----
-
-## ◌ Local Development
+# ◇ Local Development
 
 ```bash
 npm install
 npm run start
-```
+````
 
 ---
 
-## ✦ Production Build
+# ◇ Deployment
 
-```bash
-npm run build
-```
+Olé Sevilla documentation is deployed in the cloud using **Vercel** with automatic GitHub integration.
+
+### ✦ Deployment Features
+
+- automatic builds
+- cloud hosting
+- continuous deployment
+- optimized static generation
+- global availability
+
+
+
+### ◇ Deployment Workflow
+
+1. local development
+2. git commit
+3. push to GitHub
+4. automatic Vercel build
+5. production deployment
+
+
+
+### ✦ Production Environment
+
+The platform is optimized for:
+
+- responsive performance
+- fast loading times
+- scalable frontend delivery
+- modern cloud infrastructure
 
 ---
 
-## ⟡ Deployment
+# ✦ Design Philosophy
 
-The project is designed for deployment using:
+> *“Technology should create emotional experiences.”*
 
-- Vercel
-- GitHub
-- modern CI/CD workflows
-
----
-
-## ◇ Design Philosophy
-
-> ✦ “Technology should amplify culture, not replace it.”
+◇ Glassmorphism<br>
+◇ Neon UI<br>
+◇ Cinematic Design<br>
+◇ Responsive Experience<br>
 
 ---
+
+# ◇ Autor
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/d549c019-35bb-4af8-8e61-8d6885c6cd9b" width="180"/>
+
+###  Oumniya Chahidi
+
+*Designer & Developer*
+
+</div>
+
+
+
+
+
