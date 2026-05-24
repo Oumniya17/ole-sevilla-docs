@@ -14,13 +14,14 @@ const sidebars = {
 
     'backend',
 
+    'tutorial-uso',
+
     'instalacion-local',
 
     'despliegue',
 
     'github',
 
-    'tutorial-uso',
   ],
 };
 

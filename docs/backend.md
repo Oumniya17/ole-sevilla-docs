@@ -6,7 +6,7 @@
 
 ## ◉ Visión General
 
-El backend de Olé Sevilla está construido utilizando una arquitectura modular basada en Node.js y Express.
+El backend de Olé Sevilla está construido utilizando una arquitectura modular basada en **Node.js** y **Express.js**.
 
 El sistema actúa como núcleo principal encargado de:
 
@@ -46,7 +46,7 @@ graph TD
 
 A[Frontend React]
 
-A --> B[API REST Express]
+A --> B[Express REST API]
 
 B --> C[Controllers]
 
@@ -56,9 +56,9 @@ D --> E[MongoDB]
 
 D --> F[TensorFlow.js]
 
-D --> G[Translation APIs]
+D --> G[OpenAI API]
 
-D --> H[Maps Services]
+D --> H[Google Maps API]
 ```
 
 ---
@@ -78,13 +78,14 @@ La API REST gestiona toda la comunicación entre frontend y backend.
 
 ---
 
-### ◉ Endpoints principales
+### ◉ Endpoints Principales
 
 #### Authentication
 
 ```txt
 POST /api/auth/register
 POST /api/auth/login
+POST /api/auth/logout
 ```
 
 #### Users
@@ -106,6 +107,32 @@ POST /api/routes/create
 ```txt
 POST /api/scan
 POST /api/sound-detection
+POST /api/recommendations
+```
+
+---
+
+## ✦ API Responses
+
+La API utiliza respuestas estructuradas basadas en JSON.
+
+### ◉ Ejemplos
+
+```json
+{
+  "success": true,
+  "message": "Login successful"
+}
+```
+
+### ◌ Status Codes
+
+```txt
+200 OK
+201 Created
+401 Unauthorized
+404 Not Found
+500 Server Error
 ```
 
 ---
@@ -119,6 +146,11 @@ backend/
 ├── routes/
 ├── services/
 ├── middleware/
+│
+├── middleware/
+│   ├── authMiddleware.js
+│   └── validationMiddleware.js
+│
 ├── models/
 ├── utils/
 └── server.js
@@ -250,6 +282,7 @@ PORT=3000
 MONGO_URI=your_database_url
 JWT_SECRET=your_secret_key
 OPENAI_API_KEY=your_api_key
+GOOGLE_MAPS_API_KEY=your_maps_key
 ```
 
 ### ✦ Objetivo

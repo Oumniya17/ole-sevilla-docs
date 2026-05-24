@@ -15,7 +15,7 @@ const config = {
     v4: true,
   },
 
-  url: 'https://your-domain.com',
+  url: 'https://ole-sevilla-docs.vercel.app',
 
   baseUrl: '/',
 
